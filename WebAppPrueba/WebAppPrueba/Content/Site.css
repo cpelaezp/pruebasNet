@@ -1,0 +1,341 @@
+﻿body {
+    width: 1366px;
+    height: 3189px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    /*
+     padding-left: 15px;
+    padding-right: 15px;
+     */
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.header-franja1 {
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 28px;
+    background: #FFAB00 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header-franja2 {
+    top: 28px;
+    left: 0px;
+    width: 1366px;
+    height: 48px;
+    background: #3366CC 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+    text-align: left;
+    font: normal normal normal 14px/50px Work Sans;
+    letter-spacing: 0px;
+    color: #124A83;
+    opacity: 1;
+}
+
+.header-franja2-buscar {
+    background: #3366CC 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+    opacity: 1;
+    color: white;
+}
+
+.header-menu {
+    top: 76px;
+    left: 0px;
+    width: 1366px;
+    height: 38px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header-menu-group {
+    top: 86px;
+    left: 337px;
+    width: 692px;
+    height: 18px;
+    opacity: 1;
+} 
+
+.header-menu-item {
+    text-align: center;
+    font: normal normal medium 14px/14px Montserrat;
+    letter-spacing: 0.42px;
+    color: #0B457F;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.header-banner {
+    top: 114px;
+    left: 0px;
+    width: 1366px;
+    height: 390px;
+    background: transparent url('img/2nueva-bandera--agosto.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-content : center;
+    vertical-align: middle;
+}
+
+.header-banner-items {
+    align-content: center;
+    vertical-align: middle;
+}
+
+.header-banner-text1 {
+    top: 152px;
+    left: 301px;
+    width: 740px;
+    height: 74px;
+    text-align: center;
+    font: normal normal 300 61px/122px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.header-banner-search {
+    top: 256px;
+    left: 275px;
+    width: 792px;
+    height: 52px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 24px;
+    opacity: 1;
+}
+
+.header-banner-text2 {
+    top: 338px;
+    left: 301px;
+    width: 740px;
+    height: 35px;
+    text-align: center;
+    font: normal normal normal 30px/62px Work Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.home-content-div1 {
+    top: 429px;
+    left: 72px;
+    width: 1217px;
+    height: 1820px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #00000033;
+    opacity: 1;
+}
+
+
+.home-content-tramites {
+    width: 371px;
+    height: 438px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #3772FF;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.home-content-tramites-tit {
+    text-align: left;
+    font: normal normal normal 16px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #3772FF; 
+    opacity: 1;
+}
+
+.home-content-tramites-detalle {
+}
+
+.home-content-tramites-detalle-tit {
+    text-align: left;
+    font: normal normal bold 16px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
+.home-content-tramites-detalle-ent {
+    ext-align: left;
+    font: normal normal normal 14px/50px Work Sans;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
+.home-content-tramites-detalle-est {
+    text-align: left;
+    font: normal normal normal 14px/50px Work Sans;
+    letter-spacing: 0px;
+    color: #069169;
+    opacity: 1;
+}
+
+.home-content-tramites-detalle-cos {
+    text-align: left;
+    font: normal normal normal 14px/50px Work Sans;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
+.home-content-tramites-detalle-lnk {
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal normal 14px/50px Work Sans;
+    letter-spacing: 0px;
+    color: #004884;
+    opacity: 1;
+}
+
+.home-content-opiniones-detalle-tit-1 {
+    background: #F3561F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.home-content-opiniones-detalle-tit-2 {
+    background: #069169 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.home-content-opiniones-detalle-tit-3 {
+    background: #3772FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.home-content-opiniones-detalle-tema {
+    text-align: left;
+    font: normal normal bold 16px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
+.cuentanos.tit {
+    text-align: left;
+    font: normal normal 300 33px/39px Work Sans;
+    letter-spacing: 0px;
+    color: #0B457F;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.cuentanos.subtit {
+    text-align: left;
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
+.cuentanos.textarea {
+    background: #E6EFFD 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.cuentanos.button {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #3772FF;
+    border-radius: 20px;
+    text-align:  center;
+    font: normal normal bold 16px/9px Montserrat;
+    letter-spacing: 0px;
+    color: #3772FF;
+    opacity: 1;
+}
+
+.informate-tit {
+    text-align: left;
+    font: normal normal 300 44px/60px Work Sans;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
+.footer-div {
+    width: 1366px;
+    height: 272px;
+    background: #3366CC 0% 0% no-repeat padding-box;
+    align-items: center;
+}
+
+.footer-title {
+    text-align: center;
+    font: normal normal 300 30px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-icons {
+    text-align: center;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+}
+
+.footer-icon-text {
+    ttext-align: center;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.footer-links {
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal bold 16px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-link {
+    text-decoration: underline;
+    font: normal normal bold 16px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+

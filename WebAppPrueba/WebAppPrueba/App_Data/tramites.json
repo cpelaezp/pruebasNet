@@ -1,0 +1,30 @@
+﻿[
+  {
+    "id": 1,
+    "descripcion": "Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior",
+    "entidad": "Ministerio de Educación",
+    "estado": "Disponible en línea",
+    "url": "#"
+  },
+  {
+    "id": 2,
+    "descripcion": "Adopción de un niño, niña o adolescente por persona, cónyuges o compañeros permanentes residentes en Colombia",
+    "entidad": "Instituto Colombiano de Bienestar Familiar - ICBF",
+    "estado": "Disponible en línea",
+    "url": "#"
+  },
+  {
+    "id": 3,
+    "descripcion": "Instituto Colombiano de Bienestar Familiar - ICBF",
+    "entidad": "Ministerio de Justicia",
+    "estado": "Disponible en línea",
+    "url": "#"
+  },
+  {
+    "id": 4,
+    "descripcion": "Ministerio de Justicia",
+    "entidad": "Ministerio de Justicia",
+    "estado": "Disponible en línea",
+    "url": "#"
+  }
+]

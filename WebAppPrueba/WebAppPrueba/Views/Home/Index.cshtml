@@ -1,0 +1,252 @@
+﻿@using WebAppPrueba.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+    //var menus = (List<string>)ViewData["menus"]; // Cast the list
+    var tramites = (List<Tramites>)ViewData["tramites"]; // Cast the list
+
+}
+
+<div class="home-content-div1">
+    <div class="container">
+        <div class="col-md-4 home-content-tramites">
+            <span class="home-content-tramites-tit">Los trámites más usados <i class="glyphicon glyphicon-plus form-control-feedback"></i></span>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" sty>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="card p-2">
+                            <a class="card-block stretched-link text-decoration-none" href>
+                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
+                                <p class="card-text">Contraloría general de la República</p>
+                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="item active">
+                        <div class="card p-2">
+                            <a class="card-block stretched-link text-decoration-none" href>
+                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
+                                <p class="card-text">Contraloría general de la República</p>
+                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card p-2">
+                            <a class="card-block stretched-link text-decoration-none" href>
+                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
+                                <p class="card-text">Contraloría general de la República</p>
+                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card p-2">
+                            <a class="card-block stretched-link text-decoration-none" href>
+                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
+                                <p class="card-text">Contraloría general de la República</p>
+                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 home-content-tramites-detalle">
+            <div class="row">
+                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
+                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
+                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
+                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
+                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
+                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-8 home-content-tramites-detalle">
+            <div class="row">
+                <div class="home-content-opiniones-detalle-tit-1">Falta un día</div>
+                <div class="home-content-opiniones-detalle-tema">Únete al Pacto por Colombia!</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><small>Presidencia de la República</small></li>
+                        <li class="list-inline-item"><small>534 colombianos participando</small></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="home-content-opiniones-detalle-tit-2">Activo!</div>
+                <div class="home-content-opiniones-detalle-tema">Únete al Pacto por Colombia!</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><small>Presidencia de la República</small></li>
+                        <li class="list-inline-item"><small>534 colombianos participando</small></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="home-content-opiniones-detalle-tit-3">Conoce los resultados</div>
+                <div class="home-content-opiniones-detalle-tema">Únete al Pacto por Colombia!</div>
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><small>Presidencia de la República</small></li>
+                        <li class="list-inline-item"><small>534 colombianos participando</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 home-content-tramites">
+            <h2 class="cuentanos.tit">CUÉNTANOS</h2>
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label class="cuentanos.tit" for="comment">¿Cómo podemos mejorar GOV.CO?</label>
+                    <label class="cuentanos.subtit" for="comment">Estamos construyendo este espacio para ti y tu opinión nos ayuda a crecer.</label>
+                    <textarea class="form-control cuentanos.textarea" rows="10" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default cuentanos.button">Enviar mi opinión</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="informate-tit">Infórmate</div>
+        <div class="container">
+            <div class="card img-fluid col-lg-8" style="width:300px">
+                <img class="card-img-top " src="~/Content/img/Image 2.png" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <small>28 febrero 2019</small>
+                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-4" style="width:300px">
+                <img class="card-img-top " src="~/Content/img/IMG_7403.png" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <small>28 febrero 2019</small>
+                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-4" style="width:300px">
+                <img class="card-img-top " src="~/Content/img/4f5986869e2fcea8ac531992d1a0d1db.png" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <small>28 febrero 2019</small>
+                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-4" style="width:300px">
+                <img class="card-img-top " src="~/Content/img/9b8639c7ec2e5fd567d139c1b0ebde0c.png" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <small>28 febrero 2019</small>
+                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-4" style="width:300px">
+                <img class="card-img-top " src="~/Content/img/Image 3.png" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <small>28 febrero 2019</small>
+                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="informate-tit">Infórmate</div>
+        <div class="container">
+            <div class="card img-fluid col-lg-6">
+                <div class="row">
+                    <div class="col-sm-4 text-left">
+                        <img class="" src="~/Content/img/IMG_7403.png" alt="sans" width="100px">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text ehre</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-6">
+                <div class="row">
+                    <div class="col-sm-4 text-left">
+                        <img class="" src="~/Content/img/IMG_7403.png" alt="sans" width="100px">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text ehre</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-6">
+                <div class="row">
+                    <div class="col-sm-4 text-left">
+                        <img class="" src="~/Content/img/4f5986869e2fcea8ac531992d1a0d1db.png" alt="sans" width="100px">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text ehre</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card img-fluid col-lg-6">
+                <div class="row">
+                    <div class="col-sm-4 text-left">
+                        <img class="" src="~/Content/img/4f5986869e2fcea8ac531992d1a0d1db.png" alt="sans" width="100px">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Some text ehre</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
