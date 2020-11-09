@@ -125,6 +125,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Menus.cs" />
+    <Compile Include="Models\Opiniones.cs" />
+    <Compile Include="Models\Informate.cs" />
+    <Compile Include="Models\TemasInteres.cs" />
     <Compile Include="Models\Tramites.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -141,6 +144,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="App_Data\tramites.json" />
     <Content Include="App_Data\menus.json" />
+    <Content Include="App_Data\opiniones.json" />
+    <Content Include="App_Data\temasinteres.json" />
+    <Content Include="App_Data\informate.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

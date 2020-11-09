@@ -212,6 +212,14 @@ textarea {
     opacity: 1;
 }
 
+.opinionmes-tit {
+    ext-align: left;
+    font: normal normal 300 44px/60px Work Sans;
+    letter-spacing: 0px;
+    color: #0B457F;
+    opacity: 1;
+}
+
 .home-content-opiniones-detalle-tit-1 {
     background: #F3561F 0% 0% no-repeat padding-box;
     opacity: 1;

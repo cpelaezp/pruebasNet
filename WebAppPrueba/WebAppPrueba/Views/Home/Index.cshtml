@@ -2,8 +2,10 @@
 
 @{
     ViewBag.Title = "Home Page";
-    //var menus = (List<string>)ViewData["menus"]; // Cast the list
-    var tramites = (List<Tramites>)ViewData["tramites"]; // Cast the list
+    var opiniones = (List<Opiniones>)ViewData["opiniones"]; // sección de opiniones 
+    var tramites = (List<Tramites>)ViewData["tramites"]; // sección de tramites, aplica para carrusel y lista
+    var informate = (List<Informate>)ViewData["informate"]; // sección de informate
+    var temasinteres = (List<TemasInteres>)ViewData["TemasInteres"]; // sección de Temas de interes
 
 }
 
@@ -21,129 +23,63 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="card p-2">
-                            <a class="card-block stretched-link text-decoration-none" href>
-                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
-                                <p class="card-text">Contraloría general de la República</p>
-                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
-                            </a>
+                    @{
+                        var _activo = "active";
+                    }
+                    @foreach (Tramites item in tramites)
+                    {
+                        <div class="item @_activo">
+                            <div class="card p-2">
+                                <a class="card-block stretched-link text-decoration-none" href>
+                                    <h4 class="card-title">@item.Descripcion</h4>
+                                    <p class="card-text">@item.Entidad</p>
+                                    <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="item active">
-                        <div class="card p-2">
-                            <a class="card-block stretched-link text-decoration-none" href>
-                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
-                                <p class="card-text">Contraloría general de la República</p>
-                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="card p-2">
-                            <a class="card-block stretched-link text-decoration-none" href>
-                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
-                                <p class="card-text">Contraloría general de la República</p>
-                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card p-2">
-                            <a class="card-block stretched-link text-decoration-none" href>
-                                <h4 class="card-title">Certificado de antecedentes de responsabilidad fiscal</h4>
-                                <p class="card-text">Contraloría general de la República</p>
-                                <p class="card-text"><i class="glyphicon glyphicon-check"></i> <small> Disponible en línea</small></p>
-                            </a>
-                        </div>
-                    </div>
+                        _activo = "";                        
+                    }
                 </div>
             </div>
         </div>
         <div class="col-md-8 home-content-tramites-detalle">
-            <div class="row">
-                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
-                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
-                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
-                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="home-content-tramites-detalle-tit">Legalización de documentos de educación superior para adelantar estudios o trabajar en el exterior</div>
-                <div class="home-content-tramites-detalle-ent">Ministerio de Educación</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
-                        <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">Ver todo el trámite</a></li>
-                    </ul>
-                </div>
-            </div>
+            @foreach (Tramites item1 in tramites)
+            {
+
+                @:<div class="row">
+                    <div class="home-content-tramites-detalle-tit">@item1.Descripcion</div>
+                    <div class="home-content-tramites-detalle-ent">@item1.Entidad</div>
+                    @:<div class="list-inline">
+                        @:<ul class="list-inline">
+                            <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"><i class="glyphicon glyphicon-ok-circle"></i> Disponible en línea</a></li>
+                            @:<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#"<i class="glyphicon glyphicon-usd"></i> Trámite con costo</a></li>
+                            <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="@item1.Url">Ver todo el trámite</a></li>
+                        @:</ul>
+                    @:</div>
+                @:</div>
+
+            }
         </div>
     </div>
     <div class="container">
+        <p class="opinionmes-tit">Queremos conocer tu opinión</p>
         <div class="col-md-8 home-content-tramites-detalle">
-            <div class="row">
-                <div class="home-content-opiniones-detalle-tit-1">Falta un día</div>
-                <div class="home-content-opiniones-detalle-tema">Únete al Pacto por Colombia!</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><small>Presidencia de la República</small></li>
-                        <li class="list-inline-item"><small>534 colombianos participando</small></li>
-                    </ul>
+            @foreach (Opiniones item3 in opiniones)
+            {
+                <div class="row">
+                    <div class="home-content-opiniones-detalle-tit-@item3.Id">@item3.Titulo</div>
+                    <div class="home-content-opiniones-detalle-tema">@item3.Descripcion</div>
+                    <div class="list-inline">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><small>@item3.Entidad</small></li>
+                            <li class="list-inline-item"><small>@item3.Comentario</small></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="home-content-opiniones-detalle-tit-2">Activo!</div>
-                <div class="home-content-opiniones-detalle-tema">Únete al Pacto por Colombia!</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><small>Presidencia de la República</small></li>
-                        <li class="list-inline-item"><small>534 colombianos participando</small></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="home-content-opiniones-detalle-tit-3">Conoce los resultados</div>
-                <div class="home-content-opiniones-detalle-tema">Únete al Pacto por Colombia!</div>
-                <div class="list-inline">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><small>Presidencia de la República</small></li>
-                        <li class="list-inline-item"><small>534 colombianos participando</small></li>
-                    </ul>
-                </div>
-            </div>
+            }            
         </div>
-        <div class="col-md-4 home-content-tramites">
+        <div class="col-md-4 home-content-tramites top">
             <h2 class="cuentanos.tit">CUÉNTANOS</h2>
             <form action="/action_page.php">
                 <div class="form-group">
@@ -158,95 +94,41 @@
     <div class="container">
         <div class="informate-tit">Infórmate</div>
         <div class="container">
-            <div class="card img-fluid col-lg-8" style="width:300px">
-                <img class="card-img-top " src="~/Content/img/Image 2.png" alt="Card image" style="width:100%">
-                <div class="card-img-overlay">
-                    <small>28 febrero 2019</small>
-                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
+            @foreach (Informate item4 in informate)
+            {
+                <div class="card img-fluid col-lg-8" style="width:300px">
+                    <img class="card-img-top " src="~/Content/img/@item4.Imagen" alt="Card image" style="width:100%">
+                    <div class="card-img-overlay">
+                        <small>@item4.Fecha</small>
+                        <p class="card-text">@item4.Descripcion</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card img-fluid col-lg-4" style="width:300px">
-                <img class="card-img-top " src="~/Content/img/IMG_7403.png" alt="Card image" style="width:100%">
-                <div class="card-img-overlay">
-                    <small>28 febrero 2019</small>
-                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
-                </div>
-            </div>
-            <div class="card img-fluid col-lg-4" style="width:300px">
-                <img class="card-img-top " src="~/Content/img/4f5986869e2fcea8ac531992d1a0d1db.png" alt="Card image" style="width:100%">
-                <div class="card-img-overlay">
-                    <small>28 febrero 2019</small>
-                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
-                </div>
-            </div>
-            <div class="card img-fluid col-lg-4" style="width:300px">
-                <img class="card-img-top " src="~/Content/img/9b8639c7ec2e5fd567d139c1b0ebde0c.png" alt="Card image" style="width:100%">
-                <div class="card-img-overlay">
-                    <small>28 febrero 2019</small>
-                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
-                </div>
-            </div>
-            <div class="card img-fluid col-lg-4" style="width:300px">
-                <img class="card-img-top " src="~/Content/img/Image 3.png" alt="Card image" style="width:100%">
-                <div class="card-img-overlay">
-                    <small>28 febrero 2019</small>
-                    <p class="card-text">Jóvenes colombianos rompen récord en participación para la construcción de una política pública de género incluyente</p>
-                </div>
-            </div>
+            }
         </div>
     </div>
     <div class="container">
-        <div class="informate-tit">Infórmate</div>
+        <div class="informate-tit">Otros temas de tu interés</div>
         <div class="container">
-            <div class="card img-fluid col-lg-6">
-                <div class="row">
-                    <div class="col-sm-4 text-left">
-                        <img class="" src="~/Content/img/IMG_7403.png" alt="sans" width="100px">
-                    </div>
-                    <div class="col-sm-8">
-                        <h5 class="card-title">Title</h5>
-                        <p class="card-text">Some text ehre</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card img-fluid col-lg-6">
-                <div class="row">
-                    <div class="col-sm-4 text-left">
-                        <img class="" src="~/Content/img/IMG_7403.png" alt="sans" width="100px">
-                    </div>
-                    <div class="col-sm-8">
-                        <h5 class="card-title">Title</h5>
-                        <p class="card-text">Some text ehre</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            @foreach (TemasInteres item5 in temasinteres)
+            {
+                <div class="card img-fluid col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+                            <img class="" src="~/Content/img/@item5.Imagen" alt="sans" width="100px">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 class="card-title">@item5.Titulo</h5>
+                            <p class="card-text">@item5.Descripcion</p>
+                            <a href="#" class="btn btn-primary">@item5.Comentario</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card img-fluid col-lg-6">
-                <div class="row">
-                    <div class="col-sm-4 text-left">
-                        <img class="" src="~/Content/img/4f5986869e2fcea8ac531992d1a0d1db.png" alt="sans" width="100px">
-                    </div>
-                    <div class="col-sm-8">
-                        <h5 class="card-title">Title</h5>
-                        <p class="card-text">Some text ehre</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card img-fluid col-lg-6">
-                <div class="row">
-                    <div class="col-sm-4 text-left">
-                        <img class="" src="~/Content/img/4f5986869e2fcea8ac531992d1a0d1db.png" alt="sans" width="100px">
-                    </div>
-                    <div class="col-sm-8">
-                        <h5 class="card-title">Title</h5>
-                        <p class="card-text">Some text ehre</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>
 
+<br />
+<br />
+<br />
+<br />

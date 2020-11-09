@@ -12,7 +12,9 @@ namespace WebAppPrueba.Controllers
         public ActionResult Index()
         {
             ViewData["tramites"] = getJsonData<Tramites>("tramites.json");
-            ViewData["menus"] = getJsonData<Tramites>("menus.json");
+            ViewData["opiniones"] = getJsonData<Opiniones>("opiniones.json");
+            ViewData["informate"] = getJsonData<Informate>("informate.json");
+            ViewData["temasinteres"] = getJsonData<TemasInteres>("temasinteres.json");
             return View();
         }
 

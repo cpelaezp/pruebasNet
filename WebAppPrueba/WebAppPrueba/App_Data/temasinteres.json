@@ -1,0 +1,34 @@
+﻿[
+  {
+    "id": 1,
+    "titulo": "Sabes que son los datos abiertos?",
+    "descripcion": "La información que producen las entidades públicas a tu alcance",
+    "comentario": "Me interesa!",
+    "imagen": "IMG_7403.png",
+    "url": "#"
+  },
+  {
+    "id": 2,
+    "titulo": "Conoce más sobre nuestro país",
+    "descripcion": "Colombia es hermosa, y queremos que conozcas más sobre ella",
+    "comentario": "Ir a Colombia.co",
+    "imagen": "IMG_7403.png",
+    "url": "#"
+  },
+  {
+    "id": 3,
+    "titulo": "Este portal está pensado para ti",
+    "descripcion": "GOV.CO nace para facilitarle a los ciudadanos la interacción con el Estado",
+    "comentario": "GOV.CO nace para facilitarle a los ciudadanos la interacción con el Estado",
+    "imagen": "IMG_7403.png",
+    "url": "#"
+  },
+  {
+    "id": 3,
+    "titulo": "Destacado que esté en acondicionado",
+    "descripcion": "Destacado que esté en acondicionado",
+    "comentario": "Destacado que esté en acondicionado",
+    "imagen": "IMG_7403.png",
+    "url": "#"
+  }
+]
